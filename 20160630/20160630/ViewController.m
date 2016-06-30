@@ -18,6 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"haha");
+    UIImageView *imgView = [[UIImageView alloc]initWithFrame:self.view.frame];
+    imgView.image = [UIImage imageNamed:@"1"];
+    [self.view addSubview:imgView];
 }
 
 - (void)didReceiveMemoryWarning {
